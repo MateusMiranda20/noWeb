@@ -1,69 +1,73 @@
-# React + TypeScript + Vite
+# Test NoWeb
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# noWeb
 
-Currently, two official plugins are available:
+Aplicação web desenvolvida em **React + TypeScript** que permite ao usuário buscar endereços a partir de um **CEP** usando a API [ViaCEP](https://viacep.com.br/).  
+O objetivo é facilitar a obtenção de dados de endereço de forma rápida e prática, sem precisar preencher tudo manualmente.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<img src="https://github.com/MateusMiranda20/noWeb/blob/master/src/Img/noweb.png?raw=true" width="550px" />
+<img src="https://github.com/MateusMiranda20/noWeb/blob/master/src/Img/buscaCep.png?raw=true" width="550px" />
+<img src="https://github.com/MateusMiranda20/noWeb/blob/master/src/Img/cep.png?raw=true" width="550px" />
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Tecnologias usadas
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [ViaCEP API](https://viacep.com.br/)
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🖥 Instalação
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1. Clone o repositório:
+   git clone https://github.com/MateusMiranda20/noWeb.git
+  
+3. Entrar no Projeto:
+    cd projeto-noweb
+ 
+4. Instalar as dependências:
+   npm install
+   
+6. Executar Localmente:
+   npm run dev
+   
+📂 Estrutura do projeto
+   noWeb/
+├── public/              
+├── src/
+│   ├── components/      
+│   ├── pages/           
+│   ├── services/        
+│   ├── styles/          
+│   ├── App.tsx
+│   └── main.tsx
+├── index.html
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
+   
+## ⚙️ Scripts disponíveis
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- \`npm run dev\` — inicia o servidor de desenvolvimento
+- \`npm run build\` — gera a build de produção
+- \`npm run preview\` — visualiza a build localmente
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 📌 Funcionalidades
+
+- Campo para inserir o CEP
+- Consulta de endereço usando a API **ViaCEP**
+- Preenchimento automático de informações: logradouro, bairro, cidade e estado
+
+---
+
+## 📄 Licença
+
+MIT © Mateus Miranda
+
+
+
