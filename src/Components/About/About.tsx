@@ -1,5 +1,12 @@
 import {AboutSection, AboutHeader, AboutGrid, AboutCard, PartnersSection, DividerTitle} from './styles'
 
+import Ellipses from '../../assets/Ellipses.png'
+import Tech from '../../assets/Group.png'
+import Technology from '../../assets/Techno.png'
+import Technology2 from '../../assets/Technolo.png'
+import Technology3 from '../../assets/Techno4.png'
+import Isolation from '../../assets/Isolation Mode.png'
+
 function About() {
   return (
     <>
@@ -9,7 +16,7 @@ function About() {
                 We Collaborate With A Few Disability Service Providers To Create
                 Inclusive Goods That Meet Their Requirements.
                 </h2>
-                <img src="/src/assets/Ellipses.png" alt="Ellipses decoration" />
+                <img src={Ellipses} alt="Ellipses decoration" />
             </AboutHeader>
 
             <AboutGrid>
@@ -38,11 +45,11 @@ function About() {
             <PartnersSection>
                 <DividerTitle>We Worked With Global Largest Brands</DividerTitle>
                 <div className="logos-row">
-                <img src="/src/assets/Group.png" alt="Tech Logo" />
-                <img src="/src/assets/Techno.png" alt="Technology" />
-                <img src="/src/assets/Technolo.png" alt="Technology" />
-                <img src="/src/assets/Techno4.png" alt="Technology" />
-                <img src="/src/assets/Isolation Mode.png" alt="System" />
+                <img src={Tech} alt="Tech Logo" />
+                <img src={Technology} alt="Technology" />
+                <img src={Technology2} alt="Technology" />
+                <img src={Technology3} alt="Technology" />
+                <img src={Isolation} alt="System" />
                 </div>
             </PartnersSection>
         </AboutSection>

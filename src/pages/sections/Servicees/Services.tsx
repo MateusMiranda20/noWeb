@@ -1,6 +1,9 @@
 import {ServicesSection, ServicesHeader, ServicesGrid, ServiceItem, StatsGrid, StatCircle} from './styles'
 
 import Shape from '../../../assets/shape.png'
+import Vector01 from'../../../assets/Vector01.png'
+import Vector2 from '../../../assets/Vector02.png'
+import Vector3 from '../../../assets/Vector03.png'
 
 export default function Services() {
   return (
@@ -20,21 +23,21 @@ export default function Services() {
                 <ServiceItem>
                     <span className="category">Visual Branding</span>
                     <h3>Web Design And Development</h3>
-                    <img src="/src/assets/Vector02.png" alt="Web design icon" />
+                    <img src={Vector01} alt="Web design icon" />
                     <p>Established in 1995, NEXIN has been leading force in the digital landscape for over two decades. We're a passionate</p>
                 </ServiceItem>
 
                 <ServiceItem>
                     <span className="category">Brand Strategy</span>
                     <h3>Branding And Creative Services</h3>
-                    <img src="/src/assets/Vector01.png" alt="Branding icon" />
+                    <img src={Vector2} alt="Branding icon" />
                     <p>Established in 1995, NEXIN has been leading force in the digital landscape for over two decades. We're a passionate</p>
                 </ServiceItem>
 
                 <ServiceItem>
                     <span className="category">Identity Build</span>
                     <h3>Creative Digital Agency</h3>
-                    <img src="/src/assets/Vector03.png" alt="Creative agency icon" />
+                    <img src={Vector3} alt="Creative agency icon" />
                     <p>Established in 1995, NEXIN has been leading force in the digital landscape for over two decades. We're a passionate</p>
                 </ServiceItem>
             </ServicesGrid>
